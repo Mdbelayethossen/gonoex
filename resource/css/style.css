@@ -1,0 +1,483 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+:focus{
+    outline: 0;
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(248, 84, 82);
+    text-transform: uppercase;
+}
+p{
+    color: #333;
+    font-size: 1.2rem;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/*==================================================
+Reusable Component
+==================================================*/
+
+.our-btn{
+    padding: 1.3rem 4rem;
+    display: inline-block;
+    background: rgb(87, 197, 84);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 0;
+    color: #fff;
+}
+.our-btn:hover{
+    text-decoration: none;
+    color: rgb(53, 9, 8);
+    transition: .5s;
+}
+
+
+
+/*==================================================
+Header Section
+==================================================*/
+
+.header{
+    background: rgb(22, 23, 25);
+    padding: 2rem;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+}
+
+.menu{
+    float: right;
+}
+.menu ul li{
+    margin-top: 1rem;
+}
+.menu ul li i{
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: rgb(247, 247, 247);
+}
+input.search{
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    right: -65%;
+    border: none;
+    display: none;
+    font-size: 1.4rem;
+}
+.menu ul li a{
+    padding: 0rem 2rem 0 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .4s;
+}
+.menu ul li a:hover{
+    color: yellow;
+}
+
+/*mobile-menu*/
+/*mobile-menu*/
+
+.mobile-menu span{
+    color: rgb(241, 235, 235);
+    font-size: 40px;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .4s;
+}
+.overlay-content{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+.overlay-content a{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #999;
+    padding: 20px 0;
+    transition: .4s;
+}
+.overlay-content a:hover{
+    color: #fff;
+}
+.overlay a{
+    text-decoration: none;
+    color: #999;
+    transition: .4s;
+    margin-right: 20px;
+}
+.overlay a:hover{
+    color: #fff;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 95px;
+    font-size: 50px;
+}
+
+/*==================================================
+Slider Section
+==================================================*/
+
+.slider{
+    position: relative;
+    padding-top: 0;
+}
+.slider-item{
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.slider-item::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+
+}
+.slider-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider-content h3{
+    margin-bottom: 2rem;
+}
+
+.slider-content p{
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 0 4rem;
+}
+
+/*arrow*/
+.slider-arrow .left-arrow,
+.slider-arrow .right-arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    transform: translateY(-50%);
+}
+.slider-arrow .right-arrow{
+    right: 3rem;
+}
+.slider-arrow .left-arrow{
+    left: 3rem;
+}
+.slider-arrow .left-arrow a,
+.slider-arrow .right-arrow a{
+    color: #fff;
+}
+.slider-arrow .left-arrow a:hover,
+.slider-arrow .right-arrow a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*==================================================
+WEdo Section
+==================================================*/
+
+.wedo-section{
+    padding: 8rem 0;
+}
+.wedo-content1{
+    text-align: center;
+    padding: 9rem 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.wedo-content1:hover{
+    background: rgb(247, 247, 247);
+}
+.wedo-content1 span{
+    color: red;
+    font-weight: 600;
+}
+
+.wedo-content {
+    background: rgb(247, 247, 247);
+    text-align: center;
+    padding: 6rem 2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    transition: .5s;
+}
+.wedo-content:hover{
+    background: rgb(87, 197, 84);
+}
+.wedo-content p{
+    padding: 0 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.wedo-content h5{
+    padding: 0 5rem;
+    text-transform: capitalize;
+}
+.wedo-content h5 a{
+    text-transform: capitalize;
+    color: red;
+    text-decoration: none;
+}
+.wedo-content h4{
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+}
+
+/*==================================================
+Video Section
+==================================================*/
+
+.video-section{
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 8rem;0
+}
+
+.our-video{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 40rem;
+}
+.video-content{
+    text-align: center;
+    background: linear-gradient(rgba(2, 2, 2, 0.822), rgba(2, 2, 2, 0.144));
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*==================================================
+Work Section
+==================================================*/
+
+.work-section{
+    padding-bottom: 8rem;
+}
+.sec-head{
+    text-align: center;
+}
+.sec-head p{
+    margin-top: 2rem;
+    padding: 1rem 25rem;
+    font-size: 1.4rem;
+}
+
+.work-menu{
+    text-align: center;
+}
+.work-menu ul{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.work-menu ul li{
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;cursor: pointer;
+}
+.work-menu ul li.mixitup-control-active{
+    color: red;
+}
+.padding-2{
+    padding: 0.3rem;
+}
+
+.work-item{
+    position: relative;
+    text-align: center;
+}
+.work-item img{
+    max-width: 100%;
+    display: block;
+    width: 100%;
+}
+.work-item:hover .hover-item{
+    transform: translateY(-50%);
+    top: 33%;
+}
+.hover-item{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    bottom: 0%;
+    right: 0;
+    color: #fff;
+    background: rgba(7, 5, 5, 0.856);
+    transition: .5s;
+    overflow: hidden;
+}
+.hover-item p{
+    padding: 0;
+    color: #fff;
+}
+.hover-item h4{
+    margin-top: 4rem;
+}
+.hover-item .our-icon{
+    font-size: 4rem;
+    color: red;
+}
+
+/*==================================================
+About Section
+==================================================*/
+
+.about-section{
+    background: rgb(50, 70, 81);
+    overflow: hidden;
+    padding-bottom: 7rem;
+}
+.about{
+    text-align: center;
+}
+.about h3{
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+.about p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem 18rem;
+}
+
+/*==================================================
+Stat Section
+==================================================*/
+
+
+
+.stat{
+    padding-top: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+/*==================================================
+Subscribe Section
+==================================================*/
+
+.subscription{
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+    background: rgb(26, 26, 26);
+}
+
+.sub{
+    text-align: center;
+}
+.sub input{
+    padding: 1rem 4rem;
+}
+.sub input[type="text"] {
+    font-size: 1.6rem;
+}
+
+.our-btn{
+    padding: 1rem 4rem;
+    display: inline-block;
+    background: rgb(248, 82, 82);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    margin-left: 2rem;
+}
+.our-btn:hover{
+    text-decoration: none;
+    transition: .5s;
+}
+.contact{
+    text-align: center;
+    margin: 3rem 0;
+}
+.contact i{
+    padding: 2rem 4rem;
+    font-size: 1.7rem;
+    color: rgb(247, 247, 247);
+    font-style: italic;
+}
+.contact span{
+    margin-left: 0.8rem;
+}
+.social-contact{
+    text-align: center;
+    margin-top: 5rem;
+}
+.social-contact ul li a{
+    color: rgb(247, 247, 247);
+    font-size: 2rem;
+    padding: 1.2rem;
+    transition: .5s;
+}
+.social-contact ul li a:hover{
+    color: rgb(248, 82, 82);
+}
+
+
+/*==================================================
+Footer Section
+==================================================*/
+.footer-section{
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(87, 197, 84);
+    padding: 4rem 0;
+    font-size: 1.2rem;
+}
+.footer-section span{
+    text-transform: uppercase;
+    color: red;
+    font-weight: 600;
+}

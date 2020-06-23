@@ -1,0 +1,61 @@
+@media only screen and (max-width: 767px){
+    .mobile-menu span{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .sec-head p{
+        padding: 3rem 8rem;
+    }
+    .work-menu ul li{
+        padding: .5rem 3rem;
+        
+    }
+    .about p {
+        padding: 1rem 8rem;
+    }
+    .mobile-menu span {
+        margin-top: -1rem;
+    }
+    .our-btn {
+        padding: .3rem 2rem;
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+    .slider-content p {
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+    }
+    .slider-content h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .wedo-section {
+        padding: 0;
+    }
+    .sub input {
+        margin-right: 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .slider-content p {
+        display: none;
+    }
+    .sub input {
+        padding: 1rem 4rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    .our-btn {
+        padding: .3rem 2rem;
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+}
+
